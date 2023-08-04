@@ -7,6 +7,7 @@
 - 'people' 에 '사람', 'baseball' 에 '야구'
 - key 와 value를 한쌍으로 갖는 자료형
 - key를 통해 value를 얻는다.
+- 순서가 없는 자료형이다.
 
 # 딕셔너리 만드는 법
 {Key1:Value1, Key2:Value2, Key3:Value3, ...}

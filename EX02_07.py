@@ -41,4 +41,5 @@ bool('')
 res : False
 bool(0)
 res : false
+
 """
