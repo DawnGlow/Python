@@ -35,7 +35,7 @@ def 함수이름(*매개변수):
     수행할 문장
     ...
 ex)
-def add_many(*args): # *ars : 입력값을 전부 모아서 튜플로 만들어 준다,
+def add_many(*args): # *args : 입력값을 전부 모아서 튜플로 만들어 준다,
     result = 0
     for i in args:
         result += i
