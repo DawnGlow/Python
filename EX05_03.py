@@ -55,9 +55,11 @@ import game.sound.echo.echo_test # 에러발생
 ex)
 from game.sound import *
 echo.echo_test() # 에러발생
-- 에러가 발생한 이유 : __init__.py 파일에 __all__ 변수를 설정하고 import 할 수 있는 모듈을 정의해야 한다.
-__all__ = ['echo', '추가로 더있다면 추가']
-
+- 에러가 발생한 이유 : sound 디렉토리의 모듈 *를 import할 때 import 할 수 있는 모듈을 알려줘야함.
+- __init__.py 파일에 __all__ 변수를 설정하고 import 할 수 있는 모듈을 정의해야 한다.
+- __all__ = ['echo', '추가로 더있다면 추가']
+- sound 디렉토리에 * 기호를 사용하여 import 할 경우에 이곳에 정의된 echo 모듈만 import 된다는 의미
+- from game.sound.echo import *는 __all__과 상관 없이 import 됨.
 
 # relative 패키지
 

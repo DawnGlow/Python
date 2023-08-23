@@ -50,7 +50,7 @@ except IndexError as e:
     
 * try ... finally
 - try문에는 finally 절을 사용할 수 있음
-- finally문ㅇㄴ 예외 발생 여부 상관없이 항상 수행
+- finally문은 예외 발생 여부 상관없이 항상 수행
 - 리소스를 close할 때 많이 사용 (아래 예시처럼)
 
 ex)
@@ -146,6 +146,7 @@ try:
 except MyError as e:
     print(e) # 오류 메시지가 출력되지 않음
 
+--> Exception 클래스를 상속받은 MyError 클래스가 어떤 오류인지 모름
 --> print(e)로 오류메시지를 보이게 하려면 오류 클래스에 __str__ 메서드를 구현해야 함.
 ex)
 class MyError(Exception):
