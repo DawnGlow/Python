@@ -44,6 +44,10 @@ a = range(10)
 a
 res : range(0, 10) # 0부터 10 미만의 숫자를 포함하는 range 객체
 
+# enumerate 함수
+ex) for (idx, data) in enumerate(iterable)
+--> index와 iterable 변수를 묶음
+
 ex)
 add = 0
 for i in range(1, 11):

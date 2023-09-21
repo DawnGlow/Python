@@ -158,6 +158,7 @@ res : '    3.4213'
 
 1. 숫자 바로대입
 "I eat {0} apples".format(3)
+"My name is {} and my room is {}".format('choi', 327)
 2. 문자열 바로 대입
 "I eat {0} apples".format("five")
 3. 숫자 변수 대입
@@ -257,6 +258,12 @@ res : 8
 ---> 문자 t가 처음나온 위치를 반환
 find와 차이점이라면 없는 문자를 찾으려하면 오류를 발생시킨다.
 
+* endswith 함수
+line.endswith('.') --> line이 {argument}로 끝나면 True / 아니면 False 반환
+
+* startswith 함수
+line.startswith('.')--> line이 {argument}로 시작하면 True/ 아니면 False
+
 * 문자열 삽입(join 함수)
 ",".join('abcd')
 res : 'a,b,c,d'
@@ -291,6 +298,14 @@ a = " hi "
 a.strip()
 res : 'hi'
 
+* strip(parameter)
+ex)
+full_name = '\t junseo Bae \n'
+full_name.strip() # 'junseo Bae'
+full_name.strip('\t\n') # ' junseo Bae '
+full_name.lstrip() # 'junseo Bae \n'
+full_name.rstrip() # '\t junseo Bae'
+
 * 문자열 바꾸기 (replace 함수)
 a = "Life is too short"
 a.replace("Life", "Your leg")
@@ -304,4 +319,8 @@ res : ['Life', 'is', 'too', 'short']
 b = "a:b:c:d"
 b.split(':') // :를 기준으로 문자열 나눔
 res : ['a', 'b', 'c', 'd']
+
+* 문자열 \n을 기준으로 나누기(splitlines 함수)
+profs = 'choi, 327, 1\nKang, 328, 1'
+profs.splitlines() # ['choi, 327, 1', 'Kang, 328 ,1']
 """
