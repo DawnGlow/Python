@@ -41,4 +41,10 @@ res : 4
 * (1, 2, 3)에 값 4를 더해 (1, 2, 3, 4) 만들기
 (1, 2, 3) + (4,)
 
+* extended unpacking
+prof_tuple = ('choi', 327, True)
+name, *others = prof_tuple
+# name = 'choi'
+# others = (327, True)
+
 """
